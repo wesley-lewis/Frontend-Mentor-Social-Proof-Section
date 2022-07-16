@@ -1,0 +1,243 @@
+:root {
+  --veryDarkMagenta: hsl(300, 43%, 22%);
+  --softPink: hsl(333, 80%, 67%);
+  --darkGrayishMagenta: hsl(303, 10%, 53%);
+  --lightGrayishMagenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "League Spartan", sans-serif;
+  font-size: 15px;
+  background-color: hsl(300, 24%, 96%);
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 1200px;
+  height: 565px;
+  margin: 9vh auto 0px auto;
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 10px 20px 10px var(--lightGrayishMagenta);
+}
+
+.wrapper__bg-image-2 {
+  position: relative;
+  bottom: 300px;
+}
+
+.wrapper__container {
+  position: relative;
+  bottom: 1040px;
+  padding: 80px;
+  padding-top: 40px;
+}
+.wrapper__image-container {
+  display: none;
+}
+.wrapper__text-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  width: 300px;
+  color: hsl(300, 43%, 22%);
+}
+
+.wrapper__text-subtitle {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--darkGrayishMagenta);
+  margin-top: 25px;
+  width: 450px;
+}
+
+.wrapper__top-content {
+  display: flex;
+}
+
+.wrapper__rating-container {
+  position: relative;
+  bottom: 10px;
+  width: 900px;
+  margin-left: 114px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.wrapper__rating-card {
+  width: 370px;
+  padding: 14px;
+  background-color: var(--lightGrayishMagenta);
+  border-radius: 10px;
+}
+
+.wrapper__rating {
+  display: inline;
+  margin-left: 30px;
+  color: var(--veryDarkMagenta);
+  font-weight: 700;
+}
+
+.wrapper__card-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper__card {
+  width: 500px;
+  padding: 24px;
+  background-color: var(--veryDarkMagenta);
+  margin-right: 25px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgb(162, 161, 161);
+}
+
+.profile-image-title {
+  display: flex;
+  align-items: center;
+}
+
+.profile-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.wrapper__card-title {
+  font-size: 1.1rem;
+  color: white;
+  display: inline;
+  margin-left: 20px;
+}
+
+.wrapper__card-subtitle {
+  margin-left: 15px;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: var(--softPink);
+}
+
+.wrapper__card-paragraph {
+  color: var(--lightGrayishMagenta);
+  margin-top: 30px;
+  line-height: 1.6;
+  text-indent: 5px;
+}
+
+.top-displace-2 {
+  position: relative;
+  top: 15px;
+}
+
+.top-displace-3 {
+  position: relative;
+  top: 30px;
+} 
+
+
+
+.left-displace-1 {
+  position: relative;
+  left: 15px;
+}
+
+.left-displace-2 {
+  position:relative;
+  left: 45px;
+}
+
+.left-displace-3 {
+  position: relative;
+  left: 75px;
+}
+
+.attribution {
+  padding: 10px;
+  background-color: var(--softPink);
+  font-size: 1rem;
+  color: var(--lightGrayishMagenta);
+  position: relative;
+  bottom: 1020px;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    height: 1400px;
+    overflow-x: hidden;
+    margin: 0%;
+  }
+  .wrapper {
+    width: 375px;
+    height: 1300px;
+    padding: 20px;
+    margin: 5vh auto 0px auto ;
+  }
+  .wrapper__container {
+    position: static;
+    margin-top: 0px;
+    padding: 0px;
+    margin-left: 0px;
+  }
+  .wrapper__top-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .wrapper__text-title {
+    text-align: center;
+    margin-left: 10%;
+  }
+  .wrapper__text-subtitle {
+    text-align: center;
+    width: 340px;
+    margin-top: 40px;
+  }
+  .wrapper__rating-container {
+    position: static;
+    margin-left: 0px;
+    margin-top: 40px;
+  }
+  .wrapper__rating-card {
+    position: static;
+    padding-left: 0px;
+    margin-left: 0px;
+    width: 340px;
+  }
+  .wrapper__rating-card > img:last-child {
+    display: block;
+  }
+  .wrapper__rating-card > img:first-child {
+    margin-left: 40%;
+  }
+  .wrapper__rating-card > img {
+    padding-bottom: 8px;
+  }
+  .wrapper__rating {
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .wrapper__card-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .wrapper__card {
+    width: 340px;
+  }
+  .attribution {
+    position: static;
+    margin-top: 50px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    word-spacing: 5px;
+  }
+}
